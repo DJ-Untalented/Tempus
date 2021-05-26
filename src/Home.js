@@ -5,6 +5,8 @@ import Form from "./ModalForm";
 //import button from "./Get";
 import { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
+import About from "./About";
+import "./styles.css";
 //import Surprise from "./Surprise"; // this is your extra work. hey make a compodent here
 
 //state is a javascript object, functions manipulate state
@@ -31,7 +33,7 @@ class App extends Component {
         <h1>Welcome to Tempus</h1>
         <h2>Sign up and lets save time!</h2>
         <Button onClick={this.switchStateHandler}>Get Started!</Button>
-
+        {/*<About></About>*/}
         <Modal
           show={this.state.show}
           size="lg"
@@ -50,7 +52,7 @@ class App extends Component {
               privacy="We won't share your data!"
               password="Pick a good password!"
               submit="Let's do this!"
-              check="hi, I'm useless"
+              check="I'm not a robot"
             />
           </Modal.Body>
           <Modal.Footer>

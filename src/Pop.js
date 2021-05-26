@@ -1,6 +1,7 @@
 import { React, Component } from "react";
 import { Modal, Button } from "react-bootstrap";
 import Form from "./ModalForm";
+import "./styles.css";
 
 //constants are lowcase!
 //arguments such as this.state.show need to be in tags as they are not childern
